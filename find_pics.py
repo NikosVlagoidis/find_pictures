@@ -31,7 +31,7 @@ answer = ""
 if counter > 0:
     answer = raw_input("Found the above file(s). PRESS y to proceed n to finish...")
 
-# if files found move them to the destination
+# if files found and answer is yes move them to the destination 
 if answer.upper() == "Y":
     for x in glob.glob("*.jpg"):
         try:
